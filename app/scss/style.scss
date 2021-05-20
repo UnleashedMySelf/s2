@@ -6,4 +6,190 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: 'Beausite Classic Regular';
+}
+.hidden {
+    display: none !important;
+}
+/*#pre-header {
+    height: 35px;
+    width: 100%;
+    background: url(../images/pre-header-img.png) no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 5;
+    p {
+        color: #fff;
+        font-size: 12px;
+        line-height: 150%;
+        text-align: center;
+        letter-spacing: 0.370403px;
+    }
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 35px;
+    padding: 0 70px;
+    height: 70px;
+    margin: 0 auto;
+    background-color: $lgray;
+    .toggle-btn {
+        display: none;
+    }
+    .header-menu .menu {
+        display: flex;
+        .menu__item {
+            list-style: none;
+        }
+        .menu__link {
+            color: $gray;
+            text-decoration: none;
+        }
+    }
+    .user-inter {
+        display: flex;
+        align-items: center;
+        a {
+            margin-left: 30px;
+            font-size: 16px;
+            line-height: 150%;
+        }
+    }
+}*/
+
+#main {
+    .motto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        background-color: $grayba;
+        position: relative;
+        padding: 64px 0;
+        overflow: hidden;
+        color: $lgray;
+        border-top: 1px solid $black33;
+        border-bottom: 1px solid $black33;
+        .motto-text {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            z-index: 3;
+        }
+        .motto-title {
+            max-width: 700px;
+            font-size: 32px;
+            line-height: 42px;
+            font-weight: normal;
+            z-index: 3;
+        }
+        &::after, &::before {
+            content: '';
+            position: absolute;
+            width: 770px;
+            height: 890px;
+            z-index: 0;
+        }
+        &::after {
+            background-image: url(../images/vector-l.svg);
+            top: -560px;
+            left: -200px;
+        }
+        &::before {
+            background-image: url(../images/vector-r.svg);
+            top: -50px;
+            right: 0;
+        }
+    }
+    .main-blog {
+        display: flex;
+        .photo-gallery {
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid $black33;
+            .photo-gallery__item {
+                width: 631px;
+                height: 720px;
+            }
+        }
+        .about {
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+            border-left: 1px solid $black33;
+            color: $gray;
+            padding: 90px 84px 90px 70px;
+            h2 {
+                font-size: 72px;
+                line-height: 86px;
+                margin-bottom: 20px;
+            }
+            h3 {
+                font-size: 42px;
+                line-height: 50px;
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 18px;
+                line-height: 30px;
+                margin-bottom: 44px;
+            }
+            b {
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 30px;
+            }
+            li {
+                list-style: none;
+                p {
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+            }
+            .link {
+                color: $purple;
+            }
+            .about-why-list {
+                margin-top: 40px;
+                .about-why-list__item {
+                    position: relative;
+                    padding-left: 95px;
+                    h4 {
+                        font-weight: normal;
+                        font-size: 20px;
+                        line-height: 30px;
+                        margin-bottom: 4px;
+                    }
+                    .indicator {
+                        font-size: 20px;
+                        line-height: 30px;
+                        position: absolute;
+                        left: 14px;
+                        top: 16px;
+                        &::before {
+                            content: '';
+                            width: 60px;
+                            height: 60px;
+                            opacity: .2;
+                            background: $gray;
+                            position: absolute;
+                            border-radius: 50%;
+                            top: -15px;
+                            left: -16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }

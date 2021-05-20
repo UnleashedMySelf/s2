@@ -8,14 +8,344 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <header class="header">
+    <div class="pre-header hidden" id="pre-header">
+        <p>Made in USA | 100% Satisfaction Guaranteed | Free Expedited Shipping on Orders $60+</p>
+    </div>
+    <header class="header hidden" id="header">
+        <button class="toggle-btn"></button>
+        <nav class="header-menu">
+            <ul class="menu">
+                <li class="menu__item"><a href="#" class="menu__link">shop</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">buy eye stick</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">learn</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">gift disco</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <img src="images/disco-logo.svg" alt="logo disco" class="logo-img">
+        </div>
+        <div class="user-inter">
+            <p>testimonials</p>
+            <a href="#" class="account-login"><img src="images/account-icon.svg" alt="account ico"></a>
+            <a href="#" class="cart"><img src="images/cart.svg" alt="cart" class="cart-img"></a>
+        </div>
     </header>
-    <main class="main">
+    <main class="main" id="main">
+        <section class="motto">
+            <p class="motto-text">Oily skin is difficult to manage</p>
+            <h1 class="motto-title">If you’re tired of washing your face numerous times a day and seeing even oiler skin as a result, you need better skin care.</h1>
+        </section>
+        <section class="main-blog">
+            <div class="photo-gallery">
+                <img src="images/image-1.png" alt="photo" class="photo-gallery__item">
+                <img src="images/image-2.png" alt="photo" class="photo-gallery__item">
+                <img src="images/image-3.png" alt="photo" class="photo-gallery__item">
+                <img src="images/image-4.png" alt="photo" class="photo-gallery__item">
+            </div>
+            <section class="about">
+                <section class="about-head">
+                    <h2>Skincare<br/> for Oily Skin</h2>
+                    <p>Got more grease than an order of fries? You need better skincare, man. Oily skin can cause more than just a slippery surface on your mug, it can lead to breakouts that are incredibly unsexy.</p>
+                </section>
+                <section class="about-why">
+                    <h3>What Causes Oily Skin?</h3>
+                    <p>Oily skin can be genetic or brought on by external stressors like the wrong skincare products. Sometimes, oily skin can be a sign your skin is actually dehydrated.</p>
+                    <p>When your skin is overly dry, your sebaceous glands go into overdrive to produce more lubricating skin oil called sebum. This usually makes you want to wash your face more, which can dry out your skin, making your glands produce more oil.</p>
+                    <p>It’s like a dry skin hamster wheel. The solution? Get some next-level skincare.</p>
+                </section>
+                <section class="about-why">
+                    <h3>What to use for Oily Skin</h3>
+                    <p>What you’ve been using isn’t working (we’re looking at you, bar soap). Unless you’re into the glazed donut look, you need products that work to keep skin healthy and balanced.</p>
+                    <p>Certain ingredients work better than others. For instance, coconut oil is an all-natural cleanser that gently lifts away surface dirt and oil while also making sure your skin is hydrated.</p>
+                    <p>Hydrated skin = skin that doesn’t produce as much excess oil.</p>
+                    <p>Another natural ingredient that helps battle breakouts and balance your skin’s moisture levels? Charcoal.</p>
+                    <p><a href="#" class="link">Charcoal</a> helps draw out dirt and gunk from your pores to help prevent breakouts.</p>
+                    <b>Here are 3 more ingredients for battling oily skin:</b>
+                    <ul class="about-why-list">
+                        <li class="about-why-list__item">
+                            <span class="indicator">01.</span>
+                            <h4>Papaya</h4>
+                            <p>This <a href="#" class="link">natural exfoliant</a> helps clear away dead skin cells that like to hang out on the surface of your skin and create pimples. It’s gentle enough for regular use and won’t irritate your skin and cause microtears that could lead to even more oil and bumps.</p>
+                        </li>
+                        <li class="about-why-list__item">
+                            <span class="indicator">02.</span>
+                            <h4>Bentonite Clay</h4>
+                            <p>This <a href="#" class="link">natural clay</a> has absorbent properties that make it an expert oil grabber. The natural mineral properties of bentonite clay help it remove excess oil without drying out the skin and leaving it feeling tight and uncomfortable.</p>
+                        </li>
+                        <li class="about-why-list__item">
+                            <span class="indicator">03.</span>                            
+                            <h4>Tea tree oil</h4>
+                            <p>Tea tree oil is the OG of oil-busting ingredients. Ask your mom, she probably used it. Tea tree oil has astringent-like properties that help keep your pores clear of excess oil and help tighten them to keep dirt and excess oil out.</p>
+                        </li>
+                    </ul>
+                    <p>To take care of oily skin once and for all, you need products that contain oil-fighting ingredients.</p>
+                </section>
+                <section class="about-why">
+                    <h3>What’s Causing My Rosacea?</h3>
+                    <p>There’s no known cause for rosacea, and you can even develop it as you get older.</p>
+                    <b>Some of the main triggers for rosacea include:</b>
+                    <ul class="about-why-mlist">
+                        <li class="about-why-mlist">Smoking</li>
+                        <li class="about-why-mlist">Spicy foods</li>
+                        <li class="about-why-mlist">Excessive sun exposure</li>
+                        <li class="about-why-mlist">Some medications</li>
+                        <li class="about-why-mlist">Alcohol</li>
+                        <li class="about-why-mlist">Weather extremes - extreme cold, heat, or wind</li>
+                        <li class="about-why-mlist">Harsh skin care products</li>
+                    </ul>
+                </section>
+            </section>
+        </section>
+        <section class="gift">
+            <h3>Gift Cards</h3>
+            <div class="gift-cards">
+                <div class="gift-cards__item">
+                    <img src="images/gift-card.png" alt="gift card" class="gift-cards__item-img">
+                    <span class="card-amount">$25</span>
+                    <h5 class="gift-cards__item-title">$25.00 Gift Card</h5>
+                    <p class="gift-cards__item-description">I See You</p>
+                    <button class="btn gift-card-btn">add to card | $</button>
+                </div>
+                <div class="gift-cards__item">
+                    <img src="images/gift-card.png" alt="gift card" class="gift-cards__item-img">
+                    <span class="card-amount">$50</span>
+                    <h5 class="gift-cards__item-title">$50.00 Gift Card</h5>
+                    <p class="gift-cards__item-description">I Appreciate You</p>
+                    <button class="btn gift-card-btn">add to card | $</button>
+                </div>
+                <div class="gift-cards__item">
+                    <img src="images/gift-card.png" alt="gift card" class="gift-cards__item-img">
+                    <span class="card-amount">$100</span>
+                    <h5 class="gift-cards__item-title">$100.00 Gift Card </h5>
+                    <p class="gift-cards__item-description">I Like You</p>
+                    <button class="btn gift-card-btn">add to card | $</button>
+                </div>
+                <div class="gift-cards__item">
+                    <img src="images/gift-card.png" alt="gift card" class="gift-cards__item-img">
+                    <span class="card-amount">$150</span>
+                    <h5 class="gift-cards__item-title">$150.00 Gift Card</h5>
+                    <p class="gift-cards__item-description">I Love You</p>
+                    <button class="btn gift-card-btn">add to card | $</button>
+                </div>
+            </div>
+        </section>
+        <div class="brands hidden">
+            <div class="brands__item">
+                <img src="images/brand-img-1" alt="brand " class="brands__item-img">
+            </div>
+            <div class="brands__item">
+                <img src="images/brand-img-2" alt="brand " class="brands__item-img">
+            </div>
+            <div class="brands__item">
+                <img src="images/brand-img-3" alt="brand " class="brands__item-img">
+            </div>
+            <div class="brands__item">
+                <img src="images/brand-img-4" alt="brand " class="brands__item-img">
+            </div>
+            <div class="brands__item">
+                <img src="images/brand-img-5" alt="brand " class="brands__item-img">
+            </div>
+            <div class="brands__item">
+                <img src="images/brand-img-6" alt="brand " class="brands__item-img">
+            </div>
+            <div class="brands__item">
+                <img src="images/brand-img-7" alt="brand " class="brands__item-img">
+            </div>
+        </div>
     </main>
-    <footer class="footer">
+    <footer class="footer hidden" id="footer">
+        <div class="footer-main">
+            <div class="footer-navigation">
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-nav">
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Face Cleanser Stick</a></li>
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Face Scrub</a></li>
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Face Mask</a></li>
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Face Moisturizer</a></li>
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Eye Stick</a></li>
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Body Wash</a></li>
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Deodorant</a></li>
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Shop Sets</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-nav">
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Our Story</a></li>
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Hey Man Blog</a></li>
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">FAQs</a></li>
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Contact</a></li>
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Press</a></li>
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Wholesale</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contacts">
+                    <h4>Business Info</h4>
+                    <ul class="footer-concats-nav">
+                        <li class="footer-nav-item">823 Congress Ave Suite 150</li>
+                        <li class="footer-nav-item">Austin TX, 78701</li>
+                        <li class="footer-nav-item"><a href="mailto:hi@letsdisco.co" class="footer-nav-link">hi@letsdisco.co</a></li>
+                    </ul>
+                    <ul class="footer-payments">
+                        <li class="footer-payment-item">
+                            <a href="#" class="footer-payment-link">
+                                <svg width="38" height="24" viewBox="0 0 38 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.07" d="M35 0H3C1.3 0 0 1.3 0 3V21C0 22.7 1.4 24 3 24H35C36.7 24 38 22.7 38 21V3C38 1.3 36.6 0 35 0Z" fill="black"/>
+                                    <path d="M35 1C36.1 1 37 1.9 37 3V21C37 22.1 36.1 23 35 23H3C1.9 23 1 22.1 1 21V3C1 1.9 1.9 1 3 1H35Z" fill="white"/>
+                                    <path d="M25.26 16.23C23.563 17.71 21.103 18.5 18.985 18.5C16.015 18.5 13.341 17.2 11.319 15.037C11.159 14.867 11.301 14.635 11.492 14.767C13.675 16.271 16.374 17.175 19.162 17.175C21.042 17.175 23.112 16.715 25.012 15.759C25.3 15.614 25.542 15.981 25.26 16.229V16.23ZM25.966 15.273C25.75 14.945 24.532 15.118 23.986 15.195C23.819 15.219 23.793 15.047 23.943 14.925C24.913 14.115 26.505 14.349 26.691 14.62C26.878 14.892 26.644 16.78 25.731 17.683C25.591 17.821 25.459 17.747 25.521 17.563C25.726 16.959 26.185 15.603 25.967 15.273H25.966Z" fill="#FF9900"/>
+                                    <path d="M21.814 15.291C21.24 14.793 21.138 14.561 20.821 14.086C19.874 15.098 19.203 15.401 17.971 15.401C16.518 15.401 15.384 14.463 15.384 12.583C15.384 11.116 16.146 10.116 17.228 9.62802C18.168 9.19502 19.478 9.11802 20.478 9.00002V8.76502C20.478 8.33502 20.511 7.82502 20.27 7.45502C20.058 7.12202 19.654 6.98502 19.3 6.98502C18.64 6.98502 18.05 7.33802 17.908 8.07002C17.878 8.23302 17.764 8.39302 17.608 8.40002L15.931 8.21302C15.791 8.18002 15.635 8.06002 15.674 7.83302C16.06 5.70802 17.897 5.06702 19.541 5.06702C20.381 5.06702 21.481 5.30102 22.145 5.96702C22.987 6.78702 22.907 7.88502 22.907 9.07702V11.895C22.907 12.742 23.242 13.115 23.557 13.571C23.67 13.735 23.695 13.931 23.554 14.053C23.201 14.361 22.574 14.933 22.228 15.253C22.1709 15.3005 22.1008 15.3295 22.0269 15.3363C21.953 15.3431 21.8787 15.3273 21.814 15.291ZM20.155 12.758C20.495 12.132 20.478 11.544 20.478 10.84V10.448C19.228 10.448 17.908 10.728 17.908 12.268C17.908 13.05 18.294 13.578 18.958 13.578C19.445 13.578 19.88 13.266 20.155 12.758Z" fill="#221F1F"/>
+                                </svg>                                                                
+                            </a>
+                        </li>
+                        <li class="footer-payment-item">
+                            <a href="#" class="footer-payment-link">
+                                <svg width="38" height="24" viewBox="0 0 38 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.07" d="M35 0H3C1.3 0 0 1.3 0 3V21C0 22.7 1.4 24 3 24H35C36.7 24 38 22.7 38 21V3C38 1.3 36.6 0 35 0Z" fill="black"/>
+                                    <path d="M35 1C36.1 1 37 1.9 37 3V21C37 22.1 36.1 23 35 23H3C1.9 23 1 22.1 1 21V3C1 1.9 1.9 1 3 1H35Z" fill="#006FCF"/>
+                                    <path d="M8.971 10.268L9.745 12.144H8.203L8.971 10.268ZM25.046 10.346H22.069V11.173H24.998V12.412H22.075V13.334H25.052V14.073L27.129 11.828L25.052 9.488L25.046 10.346ZM10.983 8.006H14.978L15.865 9.941L16.687 8H27.057L28.135 9.19L29.25 8H34.013L30.494 11.852L33.977 15.68H29.143L28.065 14.49L26.94 15.68H10.03L9.536 14.49H8.406L7.911 15.68H4L7.286 8H10.716L10.983 8.006ZM19.646 9.084H17.407L15.907 12.62L14.282 9.084H12.06V13.894L10 9.084H8.007L5.625 14.596H7.18L7.674 13.406H10.27L10.764 14.596H13.484V10.661L15.235 14.602H16.425L18.165 10.673V14.603H19.623L19.647 9.083L19.646 9.084ZM28.986 11.852L31.517 9.084H29.695L28.094 10.81L26.546 9.084H20.652V14.602H26.462L28.076 12.864L29.624 14.602H31.499L28.987 11.852H28.986Z" fill="white"/>
+                                </svg>                                    
+                            </a>
+                        </li>
+                        <li class="footer-payment-item">
+                            <a href="#" class="footer-payment-link">
+                                <svg width="38" height="24" viewBox="0 0 38 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M34.3872 0H3.61287C3.48468 0 3.35626 0 3.2283 0.00067947C3.12026 0.00158543 3.01245 0.00271788 2.90441 0.00566225C2.66909 0.012004 2.43173 0.0260463 2.19935 0.0677205C1.9663 0.107648 1.74051 0.182074 1.52939 0.288548C1.10499 0.504411 0.760026 0.849374 0.544163 1.27378C0.4375 1.48497 0.363065 1.71095 0.323336 1.94419C0.281209 2.17679 0.267393 2.41393 0.261051 2.64903C0.258291 2.75697 0.25663 2.86493 0.256068 2.97291C0.255615 3.10065 0.255615 3.22884 0.255615 3.35726V20.6425C0.255615 20.7709 0.255615 20.8989 0.256068 21.0273C0.256748 21.1351 0.258107 21.2432 0.261051 21.3512C0.267393 21.5858 0.281435 21.8232 0.323336 22.0556C0.362983 22.2888 0.437342 22.5148 0.543937 22.726C0.651108 22.9369 0.790999 23.1296 0.958413 23.2967C1.12554 23.4642 1.31819 23.6041 1.52917 23.7112C1.74365 23.8206 1.96335 23.8902 2.19958 23.9325C2.43173 23.974 2.66909 23.988 2.90441 23.9943C3.01245 23.9968 3.12026 23.9982 3.2283 23.9989C3.35626 23.9998 3.48468 23.9998 3.61287 23.9998H34.3872C34.5152 23.9998 34.6436 23.9998 34.7715 23.9989C34.8794 23.9984 34.9872 23.9968 35.0956 23.9943C35.3305 23.988 35.5679 23.974 35.8007 23.9325C36.0338 23.8925 36.2596 23.818 36.4707 23.7112C36.8949 23.4951 37.2397 23.1502 37.4559 22.726C37.5653 22.5115 37.6346 22.2918 37.6765 22.0556C37.7186 21.8232 37.7322 21.5858 37.7386 21.3512C37.7415 21.2432 37.7431 21.1351 37.7435 21.0273C37.7444 20.8989 37.7444 20.7709 37.7444 20.6425V3.35749C37.7444 3.22907 37.7444 3.10087 37.7435 2.97268C37.7431 2.86478 37.7414 2.75689 37.7386 2.64903C37.7322 2.41393 37.7186 2.17679 37.6765 1.94419C37.6371 1.71091 37.5627 1.4849 37.4559 1.27378C37.2399 0.849448 36.895 0.504513 36.4707 0.288548C36.2595 0.182184 36.0337 0.107836 35.8007 0.067947C35.5679 0.0260463 35.3305 0.0122305 35.0956 0.00588874C34.9876 0.00314533 34.8796 0.00148432 34.7715 0.000905959C34.6436 0 34.5152 0 34.3872 0Z" fill="black"/>
+                                    <path d="M34.3871 0.799927L34.7658 0.800606C34.8682 0.801286 34.9708 0.802418 35.0739 0.805136C35.2535 0.810119 35.4632 0.819858 35.6589 0.854964C35.8288 0.88554 35.9714 0.93197 36.1082 1.00173C36.382 1.14092 36.6044 1.36357 36.7433 1.63749C36.8126 1.77338 36.8588 1.91516 36.8894 2.08662C36.9243 2.28004 36.934 2.49045 36.9388 2.67096C36.9417 2.77288 36.9431 2.8748 36.9433 2.97899C36.9444 3.10514 36.9444 3.23107 36.9444 3.35745V20.6427C36.9444 20.7691 36.9444 20.895 36.9435 21.0237C36.9431 21.1256 36.9417 21.2275 36.939 21.3294C36.934 21.5097 36.9243 21.7201 36.889 21.9158C36.8633 22.0715 36.814 22.2223 36.7429 22.3631C36.6037 22.6371 36.3809 22.8598 36.1069 22.9989C35.971 23.0682 35.8288 23.1146 35.6605 23.145C35.4609 23.1805 35.2421 23.1903 35.0775 23.1948C34.974 23.1971 34.8709 23.1986 34.7652 23.1991C34.6395 23.2 34.5131 23.2 34.3871 23.2H3.60786C3.48329 23.2 3.35872 23.2 3.23188 23.1991C3.12995 23.1987 3.02803 23.1973 2.92612 23.195C2.75761 23.1905 2.53882 23.1805 2.34087 23.1452C2.18436 23.1191 2.03271 23.0695 1.89106 22.998C1.7552 22.929 1.63119 22.8387 1.5237 22.7307C1.41587 22.6231 1.32581 22.499 1.25689 22.3631C1.18572 22.2215 1.13639 22.0699 1.11058 21.9135C1.07525 21.7181 1.06528 21.5086 1.06075 21.3297C1.05819 21.2274 1.05668 21.1251 1.05622 21.0228L1.05554 20.7222V3.27818L1.05599 2.97808C1.05646 2.87562 1.05797 2.77316 1.06052 2.67073C1.06551 2.49135 1.07525 2.28185 1.11081 2.0848C1.13666 1.92872 1.18599 1.77745 1.25712 1.63613C1.32597 1.50069 1.41566 1.37702 1.52438 1.26853C1.63213 1.16061 1.75627 1.07041 1.8922 1.00128C2.03349 0.930289 2.18467 0.880966 2.34065 0.854964C2.53656 0.819858 2.74652 0.810119 2.92635 0.805136C3.02872 0.802418 3.13132 0.801286 3.23302 0.800606L3.61284 0.799927H34.3871Z" fill="white"/>
+                                    <path d="M10.1097 8.10159C10.4277 7.7041 10.6433 7.17027 10.5865 6.62488C10.1213 6.64798 9.55369 6.93177 9.22483 7.32971C8.92971 7.67036 8.66857 8.22639 8.73652 8.7489C9.2588 8.7942 9.78064 8.48798 10.1097 8.10159Z" fill="black"/>
+                                    <path d="M10.5806 8.85106C9.82187 8.80577 9.17727 9.2814 8.81512 9.2814C8.45273 9.2814 7.89806 8.87371 7.29809 8.88481C6.51738 8.89614 5.79306 9.33779 5.39671 10.0399C4.58179 11.4441 5.18154 13.5279 5.97425 14.6716C6.35906 15.2379 6.82291 15.8607 7.43398 15.8383C8.01153 15.8156 8.23779 15.4646 8.93946 15.4646C9.6409 15.4646 9.84474 15.8383 10.456 15.827C11.0898 15.8156 11.4861 15.2607 11.8709 14.6945C12.3126 14.049 12.4931 13.4262 12.5044 13.3922C12.4931 13.3809 11.2823 12.9163 11.2709 11.5234C11.2596 10.357 12.2218 9.8021 12.267 9.7679C11.7237 8.96431 10.8748 8.87371 10.5804 8.85106" fill="black"/>
+                                    <path d="M18.1422 7.27258C19.7906 7.27258 20.9387 8.40888 20.9387 10.0632C20.9387 11.7233 19.767 12.8655 18.101 12.8655H16.2759V15.7682H14.9573V7.27258H18.1422ZM16.2759 11.7587H17.7889C18.9372 11.7587 19.5904 11.1406 19.5904 10.0691C19.5904 8.99776 18.937 8.38533 17.7948 8.38533H16.2759V11.7587Z" fill="black"/>
+                                    <path d="M21.2657 14.0077C21.2657 12.9185 22.0958 12.2945 23.6264 12.2003L25.2689 12.1002V11.6291C25.2689 10.9405 24.8157 10.5637 24.0092 10.5637C23.3438 10.5637 22.8609 10.905 22.7612 11.4288H21.5717C21.6073 10.3281 22.6432 9.52747 24.0445 9.52747C25.5516 9.52747 26.5348 10.3163 26.5348 11.541V15.7679H25.3163V14.7494H25.2868C24.9394 15.4146 24.1738 15.8325 23.3438 15.8325C22.1194 15.8325 21.2657 15.1027 21.2657 14.0077ZM25.2689 13.4602V12.9832L23.8031 13.0775C22.9787 13.1305 22.5492 13.4365 22.5492 13.9721C22.5492 14.4903 22.9966 14.826 23.6971 14.826C24.5917 14.826 25.2689 14.2548 25.2689 13.4602Z" fill="black"/>
+                                    <path d="M27.6552 18.0404V17.0221C27.7377 17.0337 27.9377 17.0455 28.0437 17.0455C28.6264 17.0455 28.9562 16.7986 29.1564 16.1624L29.2742 15.7857L27.0428 9.60413H28.4203L29.9747 14.62H30.0042L31.5583 9.60413H32.9007L30.5869 16.0976C30.0569 17.5872 29.4506 18.076 28.1673 18.076C28.0672 18.076 27.7433 18.0642 27.6552 18.0404Z" fill="black"/>
+                                </svg>    
+                            </a>
+                        </li>
+                        <li class="footer-payment-item">
+                            <a href="#" class="footer-payment-link">
+                                <svg width="38" height="24" viewBox="0 0 38 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.07" d="M35 0H3C1.3 0 0 1.3 0 3V21C0 22.7 1.4 24 3 24H35C36.7 24 38 22.7 38 21V3C38 1.3 36.6 0 35 0Z" fill="black"/>
+                                    <path d="M35 1C36.1 1 37 1.9 37 3V21C37 22.1 36.1 23 35 23H3C1.9 23 1 22.1 1 21V3C1 1.9 1.9 1 3 1H35Z" fill="white"/>
+                                    <path d="M12 12V15.7C12 16 11.8 16 11.5 15.9C9.60001 15.1 8.50001 12.6 9.20001 10.5C9.60001 9.4 10.4 8.5 11.5 8.1C11.9 7.9 12 8 12 8.3V12ZM14 12V8.3C14 8 14 8 14.3 8.1C16.4 8.9 17.5 11.4 16.7 13.5C16.3 14.6 15.5 15.5 14.4 15.9C14 16.1 14 16 14 15.7V12ZM21.2 5H13C16.8 5 19.8 8.1 19.8 12C19.8 15.9 16.8 19 13 19H21.2C25 19 28 15.9 28 12C28 8.1 25 5 21.2 5Z" fill="#3086C8"/>
+                                </svg>                                    
+                            </a>
+                        </li>
+                        <li class="footer-payment-item">
+                            <a href="#" class="footer-payment-link">
+                                <svg width="38" height="24" viewBox="0 0 38 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.07" d="M35 0H3C1.3 0 0 1.3 0 3V21C0 22.7 1.4 24 3 24H35C36.7 24 38 22.7 38 21V3C38 1.3 36.6 0 35 0Z" fill="black"/>
+                                    <path d="M35 1C36.1 1 37 1.9 37 3V21C37 22.1 36.1 23 35 23H3C1.9 23 1 22.1 1 21V3C1 1.9 1.9 1 3 1H35Z" fill="white"/>
+                                    <path d="M37 16.95V21C37 22.1 36.1 23 35 23H23.228C31.124 21.185 35.271 18.399 37 16.95Z" fill="#EDA024"/>
+                                    <path d="M9 11H29V13H9V11Z" fill="#494949"/>
+                                    <path d="M22 12C22 13.7 20.7 15 19 15C17.3 15 16 13.6 16 12C16 10.4 17.4 9 19 9C20.7 9 22 10.3 22 12Z" fill="#EDA024"/>
+                                </svg>                                    
+                            </a>
+                        </li>
+                        <li class="footer-payment-item">
+                            <a href="#" class="footer-payment-link">
+                                <svg width="38" height="24" viewBox="0 0 38 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.07" d="M35 0H3C1.3 0 0 1.3 0 3V21C0 22.7 1.4 24 3 24H35C36.7 24 38 22.7 38 21V3C38 1.3 36.6 0 35 0Z" fill="black"/>
+                                    <path d="M35 1C36.1 1 37 1.9 37 3V21C37 22.1 36.1 23 35 23H3C1.9 23 1 22.1 1 21V3C1 1.9 1.9 1 3 1H35Z" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5 5H15V16.5C15 17.163 14.7366 17.7989 14.2678 18.2678C13.7989 18.7366 13.163 19 12.5 19H9V7.5C9 6.83696 9.26339 6.20107 9.73223 5.73223C10.2011 5.26339 10.837 5 11.5 5Z" fill="#006EBC"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5 5H22V16.5C22 17.163 21.7366 17.7989 21.2678 18.2678C20.7989 18.7366 20.163 19 19.5 19H16V7.5C16 6.83696 16.2634 6.20107 16.7322 5.73223C17.2011 5.26339 17.837 5 18.5 5Z" fill="#F00036"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M25.5 5H29V16.5C29 17.163 28.7366 17.7989 28.2678 18.2678C27.7989 18.7366 27.163 19 26.5 19H23V7.5C23 6.83696 23.2634 6.20107 23.7322 5.73223C24.2011 5.26339 24.837 5 25.5 5Z" fill="#2AB419"/>
+                                    <path d="M10.755 14.5C9.695 14.5 8.633 14.196 8.099 13.513L8.879 12.837C8.947 13.97 12.424 14.077 12.424 12.647V9.50003H14.226V12.647C14.226 13.375 13.652 13.969 12.653 14.279C12.187 14.423 11.288 14.5 10.755 14.5ZM18.871 14.5C18.197 14.5 17.483 14.393 16.906 14.134C15.958 13.709 15.594 12.928 15.606 11.935C15.618 10.921 16.042 10.153 17.074 9.77003C18.393 9.28003 20.417 9.50903 21 10.04V11.012C20.428 10.491 19.042 10.114 18.081 10.552C17.587 10.778 17.344 11.469 17.337 12C17.331 12.56 17.582 13.252 18.081 13.497C19.034 13.964 20.471 13.537 21 13.056V14.066C20.642 14.321 19.747 14.5 18.871 14.5ZM27.55 11.913C27.92 11.678 28.132 11.346 28.132 10.908C28.132 10.47 28.016 10.221 27.784 9.96903C27.578 9.76203 27.204 9.50003 26.546 9.50003H23V14.5H26.546C27.242 14.5 27.643 14.27 27.861 14.085C28.144 13.835 28.287 13.555 28.287 13.125C28.287 12.694 28.132 12.217 27.55 11.913ZM25.644 11.632H24.216V10.188H25.711C26.667 10.188 26.655 11.632 25.644 11.632ZM25.932 13.789H24.216V12.276H25.932C26.918 12.276 27.015 13.789 25.932 13.789Z" fill="white"/>
+                                </svg>                                                                     
+                            </a>
+                        </li>
+                        <li class="footer-payment-item">
+                            <a href="#" class="footer-payment-link">
+                                <svg width="38" height="24" viewBox="0 0 38 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.07" d="M35 0H3C1.3 0 0 1.3 0 3V21C0 22.7 1.4 24 3 24H35C36.7 24 38 22.7 38 21V3C38 1.3 36.6 0 35 0Z" fill="black"/>
+                                    <path d="M35 1C36.1 1 37 1.9 37 3V21C37 22.1 36.1 23 35 23H3C1.9 23 1 22.1 1 21V3C1 1.9 1.9 1 3 1H35Z" fill="white"/>
+                                    <path d="M15 19C18.866 19 22 15.866 22 12C22 8.13401 18.866 5 15 5C11.134 5 8 8.13401 8 12C8 15.866 11.134 19 15 19Z" fill="#EB001B"/>
+                                    <path d="M23 19C26.866 19 30 15.866 30 12C30 8.13401 26.866 5 23 5C19.134 5 16 8.13401 16 12C16 15.866 19.134 19 23 19Z" fill="#F79E1B"/>
+                                    <path d="M22 12C22 9.60005 20.8 7.50005 19 6.30005C17.2 7.60005 16 9.70005 16 12C16 14.3 17.2 16.5 19 17.7C20.8 16.5 22 14.4 22 12Z" fill="#FF5F00"/>
+                                </svg>                                                               
+                            </a>
+                        </li>
+                        <li class="footer-payment-item">
+                            <a href="#" class="footer-payment-link">
+                                <svg width="38" height="24" viewBox="0 0 38 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.07" d="M35 0H3C1.3 0 0 1.3 0 3V21C0 22.7 1.4 24 3 24H35C36.7 24 38 22.7 38 21V3C38 1.3 36.6 0 35 0Z" fill="black"/>
+                                    <path d="M35 1C36.1 1 37 1.9 37 3V21C37 22.1 36.1 23 35 23H3C1.9 23 1 22.1 1 21V3C1 1.9 1.9 1 3 1H35Z" fill="white"/>
+                                    <path d="M23.9 8.3C24.1 7.3 23.9 6.6 23.3 6C22.7 5.3 21.6 5 20.2 5H16.1C15.8 5 15.6 5.2 15.5 5.5L14 15.6C14 15.8 14.1 16 14.3 16H17L17.4 12.6L19.2 10.4L23.9 8.3Z" fill="#003087"/>
+                                    <path d="M23.9 8.30005L23.7 8.50005C23.2 11.3 21.5 12.3 19.1 12.3H18C17.7 12.3 17.5 12.5 17.4 12.8L16.8 16.7L16.6 17.7C16.6 17.9 16.7 18.1 16.9 18.1H19C19.3 18.1 19.5 17.9 19.5 17.7V17.6L19.9 15.2V15.1C19.9 14.9 20.2 14.7 20.4 14.7H20.7C22.8 14.7 24.4 13.9 24.8 11.5C25 10.5 24.9 9.70005 24.4 9.10005C24.3 8.60005 24.1 8.40005 23.9 8.30005Z" fill="#3086C8"/>
+                                    <path d="M23.3 8.10005C23.2 8.00005 23.1 8.00005 23 8.00005C22.9 8.00005 22.8 8.00005 22.7 7.90005C22.4 7.80005 22 7.80005 21.6 7.80005H18.6C18.5 7.80005 18.4 7.80005 18.4 7.90005C18.2 8.00005 18.1 8.10005 18.1 8.30005L17.4 12.7V12.8C17.4 12.5 17.7 12.3 18 12.3H19.3C21.8 12.3 23.4 11.3 23.9 8.50005V8.30005C23.8 8.20005 23.6 8.10005 23.4 8.10005H23.3Z" fill="#012169"/>
+                                </svg>                                                                    
+                            </a>
+                        </li>
+                        <li class="footer-payment-item">
+                            <a href="#" class="footer-payment-link">
+                                <svg width="38" height="24" viewBox="0 0 38 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M35 0H3C1.34315 0 0 1.34315 0 3V21C0 22.6569 1.34315 24 3 24H35C36.6569 24 38 22.6569 38 21V3C38 1.34315 36.6569 0 35 0Z" fill="black" fill-opacity="0.07"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M35 1C36.1 1 37 1.9 37 3V21C37 22.1 36.1 23 35 23H3C1.9 23 1 22.1 1 21V3C1 1.9 1.9 1 3 1H35Z" fill="#3D95CE"/>
+                                    <path d="M24.675 8.36002C24.675 11.424 22.118 15.405 20.042 18.2H15.302L13.4 6.57002L17.551 6.16802L18.556 14.443C19.496 12.877 20.655 10.418 20.655 8.74102C20.655 7.82302 20.501 7.19802 20.261 6.68302L24.041 5.90002C24.478 6.63802 24.675 7.39902 24.675 8.36002Z" fill="white"/>
+                                </svg>                                                                       
+                            </a>
+                        </li>
+                        <li class="footer-payment-item">
+                            <a href="#" class="footer-payment-link">
+                                <svg width="38" height="24" viewBox="0 0 38 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.07" d="M35 0H3C1.3 0 0 1.3 0 3V21C0 22.7 1.4 24 3 24H35C36.7 24 38 22.7 38 21V3C38 1.3 36.6 0 35 0Z" fill="black"/>
+                                    <path d="M35 1C36.1 1 37 1.9 37 3V21C37 22.1 36.1 23 35 23H3C1.9 23 1 22.1 1 21V3C1 1.9 1.9 1 3 1H35Z" fill="white"/>
+                                    <path d="M28.3 10.1H28C27.6 11.1 27.3 11.6 27 13.1H28.9C28.6 11.6 28.6 10.9 28.3 10.1ZM31.2 16H29.5C29.4 16 29.4 16 29.3 15.9L29.1 15L29 14.8H26.6C26.5 14.8 26.4 14.8 26.4 15L26.1 15.9C26.1 16 26 16 26 16H23.9L24.1 15.5L27 8.7C27 8.2 27.3 8 27.8 8H29.3C29.4 8 29.5 8 29.5 8.2L30.9 14.7C31 15.1 31.1 15.4 31.1 15.8C31.2 15.9 31.2 15.9 31.2 16ZM17.8 15.7L18.2 13.9C18.3 13.9 18.4 14 18.4 14C19.1 14.3 19.8 14.5 20.5 14.4C20.7 14.4 21 14.3 21.2 14.2C21.7 14 21.7 13.5 21.3 13.1C21.1 12.9 20.8 12.8 20.5 12.6C20.1 12.4 19.7 12.2 19.4 11.9C18.2 10.9 18.6 9.5 19.3 8.8C19.9 8.4 20.2 8 21 8C22.2 8 23.5 8 24.1 8.2H24.2C24.1 8.8 24 9.3 23.8 9.9C23.3 9.7 22.8 9.5 22.3 9.5C22 9.5 21.7 9.5 21.4 9.6C21.2 9.6 21.1 9.7 21 9.8C20.8 10 20.8 10.3 21 10.5L21.5 10.9C21.9 11.1 22.3 11.3 22.6 11.5C23.1 11.8 23.6 12.3 23.7 12.9C23.9 13.8 23.6 14.6 22.8 15.2C22.3 15.6 22.1 15.8 21.4 15.8C20 15.8 18.9 15.9 18 15.6C17.9 15.8 17.9 15.8 17.8 15.7ZM14.3 16C14.4 15.3 14.4 15.3 14.5 15C15 12.8 15.5 10.5 15.9 8.3C16 8.1 16 8 16.2 8H18C17.8 9.2 17.6 10.1 17.3 11.2C17 12.7 16.7 14.2 16.3 15.7C16.3 15.9 16.2 15.9 16 15.9L14.3 16ZM5 8.2C5 8.1 5.2 8 5.3 8H8.7C9.2 8 9.6 8.3 9.7 8.8L10.6 13.2C10.6 13.3 10.6 13.3 10.7 13.4C10.7 13.3 10.8 13.3 10.8 13.3L12.9 8.2C12.8 8.1 12.9 8 13 8H15.1C15.1 8.1 15.1 8.1 15 8.2L11.9 15.5C11.8 15.7 11.8 15.8 11.7 15.9C11.6 16 11.4 15.9 11.2 15.9H9.7C9.6 15.9 9.5 15.9 9.5 15.7L7.9 9.5C7.7 9.3 7.4 9 7 8.9C6.4 8.6 5.3 8.4 5.1 8.4L5 8.2Z" fill="#142688"/>
+                                </svg>                                                                     
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-join-us">
+                <form action="submit">
+                    <h4>Let's Disco</h4>
+                    <label for="input-subscribe">Subscribe to receive 15% off your first order and the occasional skincare tip and deal.</label>
+                    <input type="email" name="input-subscribe" id="input-subscribe">
+                    <input type="submit" value="subscribe">
+                </form>
+                <div class="footer-social">
+                    <div class="logo">
+                        <img src="images/disco-logo.svg" alt="logo disco" class="logo-img">
+                    </div>
+                    <ul class="social-links">
+                        <li class="social-links__item"><a href="#" class="social-links__link">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C5.82733 0 5.55467 0.00909877 4.70133 0.0467937C3.40133 0.104636 2.25933 0.415294 1.34267 1.30892C0.426 2.20255 0.107333 3.31585 0.048 4.58318C0.00933333 5.41507 0 5.68089 0 7.79895C0 9.91702 0.00933333 10.1828 0.048 11.0147C0.107333 12.282 0.426 13.3953 1.34267 14.289C2.25933 15.1826 3.40133 15.4933 4.70133 15.5511C5.55467 15.5888 5.82733 15.5979 8 15.5979C10.1727 15.5979 10.4453 15.5888 11.2987 15.5511C12.5987 15.4933 13.7407 15.1826 14.6573 14.289C15.574 13.3953 15.8927 12.282 15.952 11.0147C15.9907 10.1828 16 9.91702 16 7.79895C16 5.68089 15.9907 5.41507 15.952 4.58318C15.8927 3.31585 15.574 2.20255 14.6573 1.30892C13.7407 0.415294 12.5987 0.104636 11.2987 0.0467937C10.4453 0.00909877 10.1727 0 8 0ZM7.99995 1.4043C10.136 1.4043 10.3893 1.4121 11.2326 1.44979C12.1433 1.49009 12.988 1.66816 13.6379 2.30183C14.288 2.93549 14.4706 3.75893 14.5119 4.64671C14.5506 5.46885 14.5586 5.71582 14.5586 7.79814C14.5586 9.88046 14.5506 10.1274 14.5119 10.9496C14.4706 11.8373 14.288 12.6608 13.6379 13.2944C12.988 13.9281 12.1433 14.1062 11.2326 14.1465C10.3893 14.1842 10.136 14.192 7.99995 14.192C5.86395 14.192 5.61062 14.1842 4.76728 14.1465C3.85662 14.1062 3.01195 13.9281 2.36195 13.2944C1.71195 12.6608 1.52928 11.8373 1.48795 10.9496C1.44928 10.1274 1.44128 9.88046 1.44128 7.79814C1.44128 5.71582 1.44928 5.46885 1.48795 4.64671C1.52928 3.75893 1.71195 2.93549 2.36195 2.30183C3.01195 1.66816 3.85662 1.49009 4.76728 1.44979C5.61062 1.4121 5.86395 1.4043 7.99995 1.4043ZM3.89197 7.79968C3.89197 5.58803 5.7313 3.79492 7.99997 3.79492C10.2686 3.79492 12.108 5.58803 12.108 7.79968C12.108 10.0113 10.2686 11.8044 7.99997 11.8044C5.7313 11.8044 3.89197 10.0113 3.89197 7.79968ZM8.00004 10.3985C6.52737 10.3985 5.33337 9.23452 5.33337 7.79887C5.33337 6.36321 6.52737 5.19922 8.00004 5.19922C9.47271 5.19922 10.6667 6.36321 10.6667 7.79887C10.6667 9.23452 9.47271 10.3985 8.00004 10.3985ZM13.2307 3.63509C13.2307 4.15196 12.8009 4.57097 12.2707 4.57097C11.7405 4.57097 11.3107 4.15196 11.3107 3.63509C11.3107 3.11822 11.7405 2.69922 12.2707 2.69922C12.8009 2.69922 13.2307 3.11822 13.2307 3.63509Z" fill="white"/>
+                            </svg>                                
+                        </a></li>
+                        <li class="social-links__item"><a href="#" class="social-links__link">
+                            <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.81474 15.5979L2.79273 8.50795H0V5.67196H2.79273V3.89948C2.79273 1.26811 4.39737 0 6.70893 0C7.81619 0 8.76782 0.0837111 9.04515 0.121132V2.87106L7.44196 2.8718C6.18481 2.8718 5.94139 3.47843 5.94139 4.36862V5.67196H9.6L8.20364 8.50795H5.94139V15.5979H2.81474Z" fill="white"/>
+                            </svg>                                
+                        </a></li>
+                        <li class="social-links__item"><a href="#" class="social-links__link">
+                            <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="15" height="16" fill="url(#pattern0)"/>
+                                <defs>
+                                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0" transform="translate(0.0342222) scale(0.00711111 0.00666667)"/>
+                                </pattern>
+                                <image id="image0" width="131" height="150" xlink:href="data:image/png;base64,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"/>
+                                </defs>
+                            </svg>                                
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bot">
+            <p>© 2020 Lets Disco, Inc. All Rights Reserved.</p>
+            <nav class="footer-bot-nav">
+                <ul class="footer-bot-ul">
+                    <li class="footer-bot-nav__item"><a href="#" class="footer-bot-nav__link">Privacy Policy</a></li>
+                    <li class="footer-bot-nav__item"><a href="#" class="footer-bot-nav__link">Terms of Service</a></li>
+                    <li class="footer-bot-nav__item"><a href="#" class="footer-bot-nav__link">Shipping Policy</a></li>
+                    <li class="footer-bot-nav__item"><a href="#" class="footer-bot-nav__link">Return Policy</a></li>
+                </ul>
+            </nav>
+        </div>
     </footer>
     
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
     <script src="js/main.min.js"></script>
 </body>
 </html>
