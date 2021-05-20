@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TItle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="stylesheet" href="css/style.min.css">
+
 </head>
 <body>
     <div class="pre-header hidden" id="pre-header">
@@ -85,13 +88,13 @@
                     <p>There’s no known cause for rosacea, and you can even develop it as you get older.</p>
                     <b>Some of the main triggers for rosacea include:</b>
                     <ul class="about-why-mlist">
-                        <li class="about-why-mlist">Smoking</li>
-                        <li class="about-why-mlist">Spicy foods</li>
-                        <li class="about-why-mlist">Excessive sun exposure</li>
-                        <li class="about-why-mlist">Some medications</li>
-                        <li class="about-why-mlist">Alcohol</li>
-                        <li class="about-why-mlist">Weather extremes - extreme cold, heat, or wind</li>
-                        <li class="about-why-mlist">Harsh skin care products</li>
+                        <li class="about-why-mlist__item">Smoking</li>
+                        <li class="about-why-mlist__item">Spicy foods</li>
+                        <li class="about-why-mlist__item">Excessive sun exposure</li>
+                        <li class="about-why-mlist__item">Some medications</li>
+                        <li class="about-why-mlist__item">Alcohol</li>
+                        <li class="about-why-mlist__item">Weather extremes - extreme cold, heat, or wind</li>
+                        <li class="about-why-mlist__item">Harsh skin care products</li>
                     </ul>
                 </section>
             </section>
@@ -344,8 +347,21 @@
             </nav>
         </div>
     </footer>
-    
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <script src="js/main.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script>
+        if (window.matchMedia("(max-width: 768px)").matches) {
+            $('.photo-gallery').slick({
+                slidesToShow: 1,
+                infinite: true,
+                variableWidth: true,
+                adaptiveHeight: true,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 3000
+            });
+        }
+    </script>
 </body>
 </html>
