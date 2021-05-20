@@ -92,6 +92,10 @@
             line-height: 42px;
             font-weight: normal;
             z-index: 3;
+            @media screen and (max-width: 768px) {
+                font-size: 22px;
+                line-height: 32px;
+            }
         }
         &::after, &::before {
             content: '';
@@ -99,6 +103,7 @@
             width: 770px;
             height: 890px;
             z-index: 0;
+            
         }
         &::after {
             background-image: url(../images/vector-l.svg);
@@ -109,8 +114,11 @@
                 top: -230%;
             }
             @media screen and (max-width: 500px) {
-                left: -50%;
-                top: -230%;
+                background-size: cover;
+                width: 234px;
+                height: 391px;
+                left: -35%;
+                top: -90%;
             }
         }
         &::before {
@@ -122,30 +130,35 @@
                 top: 20%;
             }
             @media screen and (max-width: 500px) {
-                right: -87%;
-                top: 54%;
-                transform: rotate(338deg);
+                right: 0;
+                top: 60%;
+                width: 234px;
+                height: 391px;
+                background-size: cover;
             }
         }
     }
     .main-blog {
         display: flex;
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1300px) {
             flex-direction: column;
+        }
+        @media screen and (min-width: 1930px) {
+            justify-content: center;
         }
         .photo-gallery {
             display: flex;
             flex-direction: column;
             border-right: 1px solid $black33;
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 1300px) {
                 flex-direction: row;
             }
             .photo-gallery__item {
                 display: flex;
                 width: 631px;
                 height: 720px;
-                @media screen and (max-width: 1250px) {
-                    width: 100%;
+                @media screen and (max-width: 1300px) {
+                    width: 400px;
                     height: auto;
                 }
                 @media screen and (max-width: 768px) {
@@ -162,37 +175,75 @@
             margin-left: 10px;
             border-left: 1px solid $black33;
             color: $gray;
-            padding: 90px 84px 0 70px;
-            @media screen and (max-width: 769px) {
+            padding: 90px 84px 80px 70px;
+            @media screen and (max-width: 1300px) {
                 border-left: none;
                 border-top: 1px solid $black33;
                 margin-left: 0;
+                padding: 55px 40px;
+                br {
+                    display: none;
+                }
             }
-            h2 {
+            @media screen and (max-width: 768px) {
+                padding: 55px 16px;
+            }
+            @media screen and (min-width: 1930px) {
+                max-width: 1000px;
+            }
+            h1 {
                 font-size: 72px;
                 line-height: 86px;
                 margin-bottom: 20px;
+                @media screen and (max-width: 768px) {
+                    font-size: 32px;
+                    line-height: 38px;
+                }
             }
-            h3 {
+            h2 {
                 font-size: 42px;
                 line-height: 50px;
                 margin-bottom: 20px;
+                @media screen and (max-width: 768px) {
+                    font-size: 28px;
+                    line-height: 34px;
+                }
             }
             p {
                 font-size: 18px;
                 line-height: 30px;
-                margin-bottom: 44px;
+                margin-bottom: 30px;
+                @media screen and (max-width: 768px) {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
             }
             b {
                 font-weight: 600;
                 font-size: 18px;
                 line-height: 30px;
+                @media screen and (max-width: 768px) {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
             }
             li {
                 list-style: none;
+                h4 {
+                    font-size: 20px;
+                    line-height: 30px;
+                    @media screen and (max-width: 768px) {
+                        font-size: 18px;
+                        line-height: 30px;
+                    }
+                }
                 p {
                     font-size: 16px;
                     line-height: 26px;
+                    @media screen and (max-width: 768px) {
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
                 }
             }
             .link {
@@ -205,6 +256,9 @@
                     padding-left: 95px;
                     margin-bottom: 27px;
                     border-bottom: 1px solid #DBD9DA;
+                    @media screen and (max-width: 500px) {
+                        padding-left: 60px;
+                    }
                     h4 {
                         font-weight: normal;
                         font-size: 20px;
@@ -216,7 +270,11 @@
                         line-height: 30px;
                         position: absolute;
                         left: 14px;
-                        top: 16px;
+                        top: 22px;
+                        @media screen and (max-width: 500px){
+                            top: 17px;
+                            font-size: 18px;
+                        }
                         &::before {
                             content: '';
                             width: 60px;
@@ -227,6 +285,12 @@
                             border-radius: 50%;
                             top: -15px;
                             left: -16px;
+                            @media screen and (max-width: 500px){
+                                width: 50px;
+                                height: 50px;
+                                left: -12px;
+                                top: -11px;
+                            }
                         }
                     }
                 }
@@ -234,10 +298,15 @@
             .about-why-mlist {
                 margin-top: 20px;
                 .about-why-mlist__item {
-                    margin-bottom: 20px;
+                    margin-bottom: 15px;
                     padding-left: 30px;
                     position: relative;
                     font-size: 16px;
+                    @media screen and (max-width: 500px) {
+                        font-size: 14px;
+                        line-height: 28px;
+                        margin-bottom: 10px;
+                    }
                     &::before {
                         content: '';
                         width: 18px;
@@ -256,7 +325,7 @@
         h3 {
             border-top: 1px solid $black33;
             border-bottom: 1px solid $black33;
-            padding: 12px 0 6px;
+            padding: 12px 0 12px;
             font-size: 42px;
             line-height: 42px;
             text-align: center;
@@ -273,6 +342,7 @@
             flex-wrap: wrap;
             margin: 0 auto;
             padding: 40px 0 90px;
+            text-align: center;
             .gift-cards__item {
                 display: flex;
                 flex-direction: column;
@@ -287,6 +357,9 @@
                 @media screen and (max-width: 768px) {
                     width: 40%;
                 }
+                @media screen and (max-width: 370px) {
+                    width: 90%;
+                }
                 &:hover {
                     transform: translateY(4px);
                 }
@@ -297,15 +370,23 @@
                     left: 50%;
                     transform: translate(-50%);
                     font-size: 14px;
+                    @media screen and (max-width: 500px) {
+                        top: 130px;
+                    }
                 }
                 .gift-cards__item-img {
                     width: 158px;
                     height: 106px;
+                    @media screen and (max-width: 500px) {
+                        width: 123px;
+                        height: 83px;
+                    }
                 }
                 .gift-cards__item-title {
                     padding: 34px 0 9px;
                     font-size: 16px;
                     line-height: 150%;
+                   
                 }
                 .gift-cards__item-description {
                     padding-bottom: 24px;
@@ -313,6 +394,9 @@
                     font-size: 14px;
                     line-height: 150%;
                     color: #c4c4c4;
+                    @media screen and (max-width: 500px) {
+                        line-height: 130%;
+                    }
                 }
             }
         }
@@ -331,6 +415,11 @@
         }
         @media screen and (max-width: 768px) {
             width: 80%;
+        }
+        @media screen and (max-width: 500px) {
+            font-size: 12px;
+            line-height: 150%;
+            letter-spacing: 0.02em;
         }
     }
 
